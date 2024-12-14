@@ -1,0 +1,116 @@
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between; /* Space the elements between left and right */
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links__item{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    position:relative;
+    left: 500px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .main{
+    background-color: red;
+    height:200px;
+    width: 100px;
+    z-index: -2;
+
+  }
+  
+  .footer-links__item ul {
+    padding: 0;
+    
+    background-color: red;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    
+    justify-content: space-around;
+  }
+  
+  .footer-links__item ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-links__item ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links__item ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Social icons should be aligned to the left side */
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content:space-between; /* Align social icons to the left */
+  }
+  
+  .social-links a {
+    margin-left: 10px;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* For small screens, keep social icons and footer links centered */
+  @media (max-width: 767px) {
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-links__item, .social-links {
+      justify-content: center; /* Center the items when in column layout */
+    }
+  
+    .footer-links__item ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* For very small screens, adjust the size of text and icons */
+  @media (max-width: 480px) {
+    .footer-inner .col-lg-6,
+    .footer-inner .col-md-7 {
+      text-align: center;
+    }
+  
+    .footer-links__item ul li a {
+      font-size: 14px;
+    }
+  
+    .social-links img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .copyrightsec p {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,23 +1,25 @@
-/* General container for the contact form */
-.container-fluid {/* Orange background for the section */
+/* Container for the contact form */
+.container-fluid {
     padding: 20px;
 }
 
-/* Form container */
-.contact-form {/* Orange background for the form */
+/* Contact form style */
+.contact-form {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
-    width: 100%; /* Full width to make it responsive */
-    max-width: 800px; /* Optional: set max-width for large screens */
-    margin: 0 auto; /* Center the form on the page */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     background-color: orange;
 }
 
+
+
 /* Title Section */
 .contact-title-form h1 {
-    color: white; /* White color for the title */
+    color: white;
     font-size: 36px;
     font-weight: bold;
     display: flex;
@@ -27,34 +29,35 @@
 /* Subtitle text */
 .contact-title-form p {
     font-size: 16px;
-    color: white; /* White subtitle text */
+    color: white;
 }
 
-/* Label and Input container styles */
+/* Label and Input container styles (Horizontal layout) */
 .form-group {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Ensure the label and input are side by side */
     align-items: center;
-    justify-content: space-between; /* Adds space between label and input */
+    justify-content: flex-start; /* Left-aligned */
     margin-bottom: 16px;
+    width: 100%;
 }
 
-/* Label style for horizontally aligned text */
+/* Label style */
 .form-group label {
     font-size: 16px;
     font-weight: bold;
-    color: white; /* White label text */
-    width: 180px; /* Adjust label width for better alignment */
-    margin-right: 15px; /* Space between label and input */
+    color: white;
+    margin-right: 15px;
+    width: 25%; /* Adjust label width */
 }
 
 /* Input field and textarea styling */
 .form-control {
-    width: 60%; /* Adjust input width to prevent overflow */
+    flex-grow: 1; /* Input field will take available space */
     padding: 12px;
     font-size: 16px;
-    background-color: #333; /* Dark background for input fields */
-    color: white; /* White text inside input fields */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
     border: 1px solid white; /* White border */
     border-radius: 8px;
 }
@@ -88,15 +91,15 @@
 
 .contact-info h1 {
     font-size: 32px;
-    color: white; /* White title text */
+    color: white;
 }
 
 .contact-info p {
     font-size: 18px;
-    color: white; /* White paragraph text */
+    color: white;
 }
 
-/* Responsive Design */
+/* Responsive Design for medium screens */
 @media (max-width: 1200px) {
     .contact-info h1 {
         font-size: 28px;
@@ -116,14 +119,15 @@
     }
 }
 
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .form-group {
-        flex-direction: column; /* Stack the label and input vertically on smaller screens */
+        flex-direction: column; /* Stack label and input vertically on smaller screens */
         margin-bottom: 10px;
     }
 
     .form-group label {
-        width: auto; /* Reset the width for smaller screens */
+        width: auto; /* Reset width for smaller screens */
         margin-right: 0;
         margin-bottom: 5px;
     }
@@ -146,7 +150,7 @@
     }
 }
 
-/* Mobile-specific */
+/* Mobile-specific styling */
 @media (max-width: 480px) {
     .contact-title-form {
         text-align: center;
@@ -161,7 +165,7 @@
     }
 
     .btn-primary {
-        width: 100%;
+        width: 100%; /* Full width for buttons on mobile */
         padding: 12px;
     }
 }

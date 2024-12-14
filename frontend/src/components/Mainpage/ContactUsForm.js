@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import"./Contact.css"
+import axios from 'axios'; // Import axios
+import "./Contact.css";
+
 const ContactUsForm = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -12,6 +14,8 @@ const ContactUsForm = () => {
     role: '',
     services: '',
   });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,9 +25,19 @@ const ContactUsForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form data submitted:', formData);
+    setLoading(true);
+    setMessage('');
+    
+    try {
+      const response = await axios.post('http://localhost:8000/submit', formData);
+      setMessage('Form submitted successfully!');
+    } catch (error) {
+      setMessage('Error submitting the form. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -163,9 +177,20 @@ const ContactUsForm = () => {
                   </div>
 
                   <div className="form-group">
-                    <input type="submit" className="btn btn-primary" value="SEND" />
+                    <input
+                      type="submit"
+                      className="btn btn-primary"
+                      value={loading ? 'Submitting...' : 'SEND'}
+                      disabled={loading}
+                    />
                   </div>
                 </form>
+
+                {message && (
+                  <div className={`alert ${message.includes('Error') ? 'alert-danger' : 'alert-success'}`}>
+                    {message}
+                  </div>
+                )}
               </div>
             </div>
           </div>
