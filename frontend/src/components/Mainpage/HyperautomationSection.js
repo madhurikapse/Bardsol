@@ -15,7 +15,6 @@ const HyperautomationSection = () => {
                 </div>
                 <div className="image-section">
                   <img
-                    decoding="async"
                     src="https://bradsol.com/wp-content/uploads/2023/09/banner_hyper.svg"
                     alt="What is RPA"
                   />

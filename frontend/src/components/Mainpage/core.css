@@ -1,0 +1,58 @@
+/* Grid Layout for Core Focus Areas */
+.grid-container.core {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 items per row */
+    gap: 20px;
+    padding: 32px 0 0;
+  }
+  
+  /* Individual Grid Item Styling */
+  .grid-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Styling */
+  .grid-item img {
+    max-width: 48px;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  /* Heading and Paragraph Styling */
+  .grid-item h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium Screens (Tablet & smaller desktops) */
+  @media (max-width: 1024px) {
+    .grid-container.core {
+      grid-template-columns: repeat(2, 1fr); /* Two items per row on medium screens */
+    }
+  }
+  
+  /* Small Screens (Mobile) */
+  @media (max-width: 768px) {
+    .grid-container.core {
+      grid-template-columns: 1fr; /* One item per row on small screens */
+    }
+  
+    /* Additional styling to ensure the content is centered on mobile */
+    .grid-item {
+      padding: 20px;
+    }
+  }
+  
