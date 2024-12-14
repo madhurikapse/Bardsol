@@ -1,0 +1,21 @@
+.Navbar1 {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Ensures space between items */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.email-section {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+}
