@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import './Navbar2.css';
 
 const Navbar = () => {
-  // State to manage the menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Toggle the menu visibility
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -19,21 +17,19 @@ const Navbar = () => {
           className="logo"
         />
 
-        {/* Hamburger Icon (only visible when menu is closed) */}
         {!isMenuOpen && (
           <div className="menu-icon" onClick={toggleMenu}>
-            &#9776; {/* Hamburger icon */}
+            &#9776; 
           </div>
         )}
 
-        {/* Close Icon (only visible when menu is open) */}
+      
         {isMenuOpen && (
           <div className="close-icon" onClick={toggleMenu}>
-            &#10005; {/* Close icon */}
+            &#10005; 
           </div>
         )}
 
-        {/* Navigation Links */}
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <li><a href="#home">Home</a></li>
           <li><a href="#capabilities">Capabilities</a></li>

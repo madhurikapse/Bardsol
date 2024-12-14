@@ -6,7 +6,7 @@ const CoreFocusAreas = () => {
       <h1 className="text-center">Core Focus Areas</h1>
       <div className="description_content" style={{ padding: '32px 0 0' }}>
         <div className="grid-container core">
-          {/* First Grid Item */}
+        
           <div className="grid-item">
             <a href="/process-design-and-re-engineering/">
               <img
@@ -36,7 +36,6 @@ const CoreFocusAreas = () => {
             <p>Powering Smart Decisions for Business Success.</p>
           </div>
 
-          {/* Third Grid Item */}
           <div className="grid-item">
             <a href="/process-automation/">
               <img
@@ -50,7 +49,6 @@ const CoreFocusAreas = () => {
             <p>Streamline Your Business with Intelligent Automation Solutions.</p>
           </div>
 
-          {/* Fourth Grid Item */}
           <div className="grid-item">
             <a href="/data-analytics/">
               <img
@@ -64,7 +62,6 @@ const CoreFocusAreas = () => {
             <p>Transform Your Business Processes for Operational Excellence.</p>
           </div>
 
-          {/* Fifth Grid Item */}
           <div className="grid-item">
             <a href="/cognitive-intelligence/">
               <img

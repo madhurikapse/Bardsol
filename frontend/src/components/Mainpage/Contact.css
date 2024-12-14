@@ -1,0 +1,167 @@
+/* General container for the contact form */
+.container-fluid {/* Orange background for the section */
+    padding: 20px;
+}
+
+/* Form container */
+.contact-form {/* Orange background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 100%; /* Full width to make it responsive */
+    max-width: 800px; /* Optional: set max-width for large screens */
+    margin: 0 auto; /* Center the form on the page */
+    background-color: orange;
+}
+
+/* Title Section */
+.contact-title-form h1 {
+    color: white; /* White color for the title */
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Subtitle text */
+.contact-title-form p {
+    font-size: 16px;
+    color: white; /* White subtitle text */
+}
+
+/* Label and Input container styles */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Adds space between label and input */
+    margin-bottom: 16px;
+}
+
+/* Label style for horizontally aligned text */
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* White label text */
+    width: 180px; /* Adjust label width for better alignment */
+    margin-right: 15px; /* Space between label and input */
+}
+
+/* Input field and textarea styling */
+.form-control {
+    width: 60%; /* Adjust input width to prevent overflow */
+    padding: 12px;
+    font-size: 16px;
+    background-color: #333; /* Dark background for input fields */
+    color: white; /* White text inside input fields */
+    border: 1px solid white; /* White border */
+    border-radius: 8px;
+}
+
+/* Focus effect for inputs */
+.form-control:focus {
+    border-color: #ffa500; /* Focus border color to orange */
+    outline: none;
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: #ff8c00; /* Dark orange background */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect on button */
+.btn-primary:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h1 {
+    font-size: 32px;
+    color: white; /* White title text */
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: white; /* White paragraph text */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .contact-info h1 {
+        font-size: 28px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-3, .col-md-9 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column; /* Stack the label and input vertically on smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        width: auto; /* Reset the width for smaller screens */
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile-specific */
+@media (max-width: 480px) {
+    .contact-title-form {
+        text-align: center;
+    }
+
+    .contact-info h1 {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 12px;
+    }
+}

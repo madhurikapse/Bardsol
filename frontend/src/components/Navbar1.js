@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import './Navbar.css'; // Import the external CSS file
+import './Navbar.css';
 
 const Navbar1 = () => {
   return (

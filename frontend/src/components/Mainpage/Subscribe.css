@@ -1,0 +1,197 @@
+/* Base styles for all devices */
+.subscribe-section {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+  }
+  .h{
+    margin-left: 100px;
+  }
+  
+  .subscribe-letter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px slid black;
+    height: 300px;
+    width: 400px;
+  }
+  
+  .subscribe-letter-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .subscribe-letter h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .newsletterform {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; /* Space between fields */
+  }
+  
+  .subscribe-form-wrapper {
+    width: 100%;
+  }
+  
+  .subscribe-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .form-body {
+    margin-bottom: 20px;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Space between form fields */
+  }
+  
+  .form-field label {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-field input {
+    width: 250px; /* Set input width for a more uniform look */
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .subscribe-button {
+    background-color: orange; /* Orange color for the button */
+    color: white;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .subscribe-button:hover {
+    background-color: darkorange; /* Hover effect */
+  }
+  
+  .form-message {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .form-message p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Mobile Styles (stacked layout) */
+  @media screen and (max-width: 767px) {
+    .subscribe-letter-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .newsletterform {
+      flex-direction: column; /* Stack form elements vertically */
+      justify-content: center;
+    }
+  
+    .subscribe-letter h1 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .form-field input {
+      padding: 12px;
+      font-size: 1rem;
+      width: 100%; /* Make input fields full width */
+    }
+  
+    .subscribe-button {
+      width: 100%; /* Make button full width */
+      padding: 12px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Tablet Styles (Portrait) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .subscribe-letter-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .newsletterform {
+      flex-direction: column; /* Stack form elements vertically */
+      justify-content: center;
+    }
+  
+    .subscribe-letter h1 {
+      font-size: 1.75rem;
+    }
+  
+    .form-field input {
+      padding: 12px;
+      font-size: 1rem;
+      width: 250px; /* Keep input width consistent */
+    }
+  
+    .subscribe-button {
+      width: 100%; /* Make button full width */
+      padding: 12px;
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media screen and (min-width: 1025px) {
+    .subscribe-letter-inner {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .newsletterform {
+      max-width: 100%; /* Full width */
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .subscribe-letter h1 {
+      font-size: 2rem;
+    }
+  
+    .form-field input {
+      padding: 12px;
+      font-size: 1rem;
+      width: 250px; /* Input field width */
+    }
+  
+    .subscribe-button {
+      width: auto;
+      padding: 14px 24px;
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,40 @@
+.our-customers {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%; /* Ensures the container takes up the full width */
+    position: relative;
+  }
+  
+  .customer-slide {
+    display: flex;
+    transition: transform 1s ease; /* Adds the sliding transition */
+  }
+  
+  .customer {
+    margin-right: 30px;
+  }
+  
+  .customer img {
+    max-height: 100px; /* Limit the height of the logos */
+    object-fit: contain;
+    display: block;
+    width: auto;
+  }
+  

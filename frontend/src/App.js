@@ -7,6 +7,11 @@ import HyperautomationSection from './components/Mainpage/HyperautomationSection
 import Industries from './components/Mainpage/Industries';
 import CoreFocusAreas from './components/Mainpage/CoreFocusAreas';
 import OurCustomers from './components/Mainpage/OurCustomers';
+import Subscribe from './components/Mainpage/Subscribe';
+import Ourpartners from './components/Mainpage/Ourpartner';
+import BlogSection from './components/Mainpage/BlogSection';
+import ContactUsForm from './components/Mainpage/ContactUsForm';
+import Footer from './components/Mainpage/Footer.JS';
 
 
 function App() {
@@ -21,6 +26,10 @@ function App() {
       <CoreFocusAreas/>
       <BrowserRouter>
       <OurCustomers/>
+      <Subscribe/>
+      <Ourpartners/>
+      <BlogSection/>
+      <ContactUsForm/>
       <Routes>
         <Route path="/navbar1" element={<Navbar1/>}/>
       </Routes>

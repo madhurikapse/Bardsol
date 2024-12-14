@@ -1,0 +1,133 @@
+/* Base Styles */
+.container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .our-partners {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+  }
+  
+  .our-partners-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left:400px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Grid Styles */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-12 {
+    width: 100%;
+  }
+  
+  .col-xs-12 {
+    width: 100%;
+  }
+  
+  .partners__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .partners__grid .col-md-0 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .partners__grid img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 767px) {
+    .our-partners-inner {
+      padding: 0 15px;
+    }
+  
+    .partners__grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .partners__grid .col-xs-12 {
+      margin-bottom: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 0.875rem;
+      text-align: center;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .partners__grid {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .partners__grid .col-md-0 {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media screen and (min-width: 1025px) {
+    .partners__grid {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .partners__grid .col-md-0 {
+      width: 15%;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      text-align: left;
+    }
+  
+    p {
+      font-size: 1.125rem;
+      text-align: center;
+    }
+  }
+  
