@@ -1,0 +1,79 @@
+/* Main container styling */
+.container-fluid {
+    padding: 0;
+    background-color: #003366; /* Navy blue background for the entire section */
+  }
+  
+  .rpa {
+    padding: 40px 0;
+    background-color: #ffffff; /* White background for content */
+  }
+  
+  .rpa-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .rpa-content-box {
+    display: flex; /* Use flexbox to align text and image side by side */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between the text and the image */
+    padding: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+  }
+  
+  /* Text Section - Left side */
+  .text-section {
+    flex: 1; /* Take available space */
+    padding-right: 20px;
+    border: 1px solid black;
+    width: 550px;
+    margin-top: 50px;
+  }
+  
+  .text-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    color: #003366; /* Navy blue text */
+    line-height: 1.5;
+  }
+  
+  /* Image Section - Right side */
+  .image-section {
+    flex: 1; /* Take available space */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right side */
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-left: 700px;
+    position: relative;
+    top:-250px;
+  }
+  
+  /* Responsive Styling for Smaller Screens */
+  @media (max-width: 768px) {
+    .rpa-content-box {
+      flex-direction: column; /* Stack the text and image vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .image-section img {
+      max-height: 250px; /* Limit image height on smaller screens */
+    }
+  
+    .text-section {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
