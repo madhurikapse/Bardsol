@@ -31,6 +31,17 @@
     font-size: 16px;
     color: white;
 }
+/* Success state for the button */
+.btn-success {
+    background-color: #28a745; /* Green background */
+    color: white;
+}
+
+/* Hover effect for success button */
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
 
 /* Label and Input container styles (Horizontal layout) */
 .form-group {
@@ -61,7 +72,9 @@
     border: 1px solid white; /* White border */
     border-radius: 8px;
 }
-
+alert{
+    background-color: green;
+}
 /* Focus effect for inputs */
 .form-control:focus {
     border-color: #ffa500; /* Focus border color to orange */
@@ -150,7 +163,6 @@
     }
 }
 
-/* Mobile-specific styling */
 @media (max-width: 480px) {
     .contact-title-form {
         text-align: center;
@@ -165,7 +177,7 @@
     }
 
     .btn-primary {
-        width: 100%; /* Full width for buttons on mobile */
+        width: 100%; 
         padding: 12px;
     }
 }

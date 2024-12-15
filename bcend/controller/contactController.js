@@ -1,11 +1,8 @@
-// /controllers/contactController.js
-const ContactForm = require('../models/ContactForm');
+import { ContactForm } from "../model/ContactForm.js";
 
-exports.submitContactForm = async (req, res) => {
+export const submitContactForm = async (req, res) => {
   try {
-    const { firstName, lastName, email, phone, country, organization, industry, role, services } = req.body;
-
-    const newContact = new ContactForm({
+    const {
       firstName,
       lastName,
       email,
@@ -14,12 +11,29 @@ exports.submitContactForm = async (req, res) => {
       organization,
       industry,
       role,
-      services
-    });
+      services,
+    } = req.body;
 
-    const savedContact = await newContact.save();
-    res.status(201).json({ message: 'Form submitted successfully', contact: savedContact });
+    const savedContact = await new ContactForm({
+      firstName,
+      lastName,
+      email,
+      phone,
+      country,
+      organization,
+      industry,
+      role,
+      services,
+    }).save();
+
+    return res.status(201).json({
+      message: 'Form submitted successfully',
+      contact: savedContact,
+    });
   } catch (error) {
-    res.status(500).json({ message: 'Error submitting form', error: error.message });
+    return res.status(500).json({
+      message: 'Error submitting form',
+      error: error.message,
+    });
   }
 };

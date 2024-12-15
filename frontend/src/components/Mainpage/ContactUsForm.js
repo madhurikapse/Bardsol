@@ -31,8 +31,11 @@ const ContactUsForm = () => {
     setMessage('');
     
     try {
-      const response = await axios.post('http://localhost:8000/submit', formData);
-      setMessage('Form submitted successfully!');
+      const response = await axios.post('http://localhost:8000/api/submit', formData);
+      if (response.status === 201) {
+        alert('Form submitted successfully!');
+        setMessage('Form submitted successfully!');
+      }
     } catch (error) {
       setMessage('Error submitting the form. Please try again later.');
     } finally {
