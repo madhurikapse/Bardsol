@@ -22,13 +22,12 @@
     background-color: red;
     height:200px;
     width: 100px;
-    z-index: -2;
 
   }
   
   .footer-links__item ul {
     padding: 0;
-    
+    margin-left: 500px;
     background-color: red;
     border: 1px solid black;
     height: 200px;
@@ -36,7 +35,6 @@
     margin: 0;
     list-style: none;
     display: flex;
-    
     justify-content: space-around;
   }
   

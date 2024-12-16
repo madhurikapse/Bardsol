@@ -43,7 +43,7 @@
   .close-icon {
     display: none;  /* Initially hidden */
     font-size: 24px;
-    color: white;
+    color: rgb(18, 17, 17);
     cursor: pointer;
   }
   

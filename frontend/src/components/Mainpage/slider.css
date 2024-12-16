@@ -39,6 +39,10 @@
   height: 100%;
   object-fit: cover; /* Ensure the image covers the area without distortion */
 }
+.btn.bannerbtn2, a{
+  text-decoration: none;
+  color: white;
+}
 
 /* Centered Text and Button Styling */
 .carousel-caption {
@@ -138,13 +142,21 @@
     font-size: 1.2rem;
   }
 
-  .btn.bannerbtn, .btn.bannerbtn2 {
+  .btn.bannerbtn{
     padding: 10px 20px;
     font-size: 1rem;
   }
-
+  .btn.bannerbtn2 {
+    margin-right:80px;
+    margin-top: 90px;
+  }
   .btn-group {
     gap: 10px; /* Reduce the space between buttons */
+  }
+  
+  .btn.bannerbtn2, a{
+    text-decoration: none;
+    color: white;
   }
 
   .prev, .next {
@@ -183,8 +195,7 @@
     width: 100%; /* Buttons take full width */
   }
 
-  .btn.bannerbtn,
-  .btn.bannerbtn2 {
+  .btn.bannerbtn{
     width: 100%;
     padding: 10px;
   }
@@ -193,7 +204,10 @@
     font-size: 26px;
   }
 }
-
+.btn.bannerbtn2, a{
+  text-decoration: none;
+  color: white;
+}
 /* On very small screens (480px and below) */
 @media (max-width: 480px) {
   .slider {
@@ -215,8 +229,7 @@
     width: 100%;
   }
 
-  .btn.bannerbtn,
-  .btn.bannerbtn2 {
+  .btn.bannerbtn{
     width: 100%;
     padding: 8px 14px;
     font-size: 0.9rem;
@@ -226,7 +239,10 @@
     font-size: 22px;
   }
 }
-
+.btn.bannerbtn2, a{
+  text-decoration: none;
+  color: white;
+}
 /* On extra small screens (below 360px) */
 @media (max-width: 360px) {
   .slider {
@@ -236,7 +252,10 @@
   .carousel-caption h1 {
     font-size: 1.6rem;
   }
-
+  .btn.bannerbtn2, a{
+    text-decoration: none;
+    color: white;
+  }
   .carousel-caption p {
     font-size: 0.9rem;
   }
@@ -248,8 +267,7 @@
     width: 100%;
   }
 
-  .btn.bannerbtn,
-  .btn.bannerbtn2 {
+  .btn.bannerbtn{
     width: 100%;
     padding: 6px 12px;
     font-size: 0.8rem;
